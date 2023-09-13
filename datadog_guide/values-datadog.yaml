@@ -1,0 +1,11 @@
+datadog:
+  site: < YOUR DATADOG SITE e.g. ap1.datadoghq.com >
+  apiKey: < YOUR API KEY >
+
+  logs:
+    enabled: true
+    containerCollectAll: true
+
+  dogstatsd:
+    # Sets the hostPort to the same value of the container port
+    useHostPort: true
